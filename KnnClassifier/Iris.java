@@ -1,40 +1,34 @@
-package KnnClassifier;
-
 class Iris {
-    private final double sepalLength;
-    private final double sepalWidth;
-    private final double petalLength;
-    private final double petalWidth;
-    private final String name;
+    final Integer id;
+    final double sepalLength;
+    final double sepalWidth;
+    final double petalLength;
+    final double petalWidth;
+    final String species;
 
-    public Iris(double sepalLength, double sepalWidth, double petalLength, double petalWidth, String name) {
+    public Iris(Integer id, double sepalLength, double sepalWidth, double petalLength, double petalWidth, String species) {
+        this.id = id;
         this.sepalLength = sepalLength;
         this.sepalWidth = sepalWidth;
         this.petalLength = petalLength;
         this.petalWidth = petalWidth;
-        this.name = name;
+        this.species = species;
     }
 
-    public double getSepalLength() {
-        return sepalLength;
-    }
-
-    public double getSepalWidth() {
-        return sepalWidth;
-    }
-
-    public double getPetalLength() {
-        return petalLength;
-    }
-
-    public double getPetalWidth() {
-        return petalWidth;
+    public double calculateDistance(Iris iris1, Iris iris2) {
+        double distance =
+				Math.pow((iris2.petalLength - iris1.petalLength), 2) +
+				Math.pow((iris2.petalWidth - iris1.petalWidth), 2) +
+				Math.pow((iris2.sepalLength - iris1.sepalLength), 2) +
+				Math.pow((iris2.sepalWidth - iris1.sepalWidth), 2);
+        
+		return Math.sqrt(distance);
     }
 
     @Override
     public String toString() {
         return "Iris { " + "sepal_length = " + sepalLength + ", sepal_width = " + sepalWidth + ", petal_length = "
-                + petalLength + ", petal_width = " + petalWidth + ", species = '" + name + '\'' + " }";
+                + petalLength + ", petal_width = " + petalWidth + ", species = '" + species + '\'' + " }";
     }
 
     @Override
@@ -47,6 +41,6 @@ class Iris {
         Iris iris = (Iris) object;
         return Double.compare(iris.sepalLength, sepalLength) == 0 && Double.compare(iris.sepalWidth, sepalWidth) == 0
                 && Double.compare(iris.petalLength, petalLength) == 0
-                && Double.compare(iris.petalWidth, petalWidth) == 0 && name.equals(((Iris) object).name);
+                && Double.compare(iris.petalWidth, petalWidth) == 0 && species.equals(((Iris) object).species);
     }
 }

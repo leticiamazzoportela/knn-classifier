@@ -1,5 +1,3 @@
-package KnnClassifier;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -15,9 +13,10 @@ public class DatasetLoader {
 
             while ((line = bufferedReader.readLine()) != null) {
                 String[] data = line.split(",");
+                Iris newIris = new Iris(Integer.parseInt(data[0]), Double.parseDouble(data[1]),
+                        Double.parseDouble(data[2]), Double.parseDouble(data[3]), Double.parseDouble(data[4]), data[5]);
 
-                iris.add(new Iris(Double.parseDouble(data[0]), Double.parseDouble(data[1]), Double.parseDouble(data[2]),
-                        Double.parseDouble(data[3]), data[4]));
+                iris.add(newIris);
             }
 
             bufferedReader.close();
