@@ -1,0 +1,100 @@
+Serial Knn Classifier - Iteration with k = 3
+Serial Accuracy : 60%
+Serial KNN Classifier duration: 2.879 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 3
+Concurrent Accuracy : 60%
+Concurrent KNN Classifier duration: 0.848 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 6
+Serial Accuracy : 55%
+Serial KNN Classifier duration: 0.025 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 6
+Concurrent Accuracy : 51%
+Concurrent KNN Classifier duration: 0.2 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 9
+Serial Accuracy : 52%
+Serial KNN Classifier duration: 0.03 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 9
+Concurrent Accuracy : 53%
+Concurrent KNN Classifier duration: 0.146 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 12
+Serial Accuracy : 50%
+Serial KNN Classifier duration: 0.009 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 12
+Concurrent Accuracy : 48%
+Concurrent KNN Classifier duration: 0.493 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 15
+Serial Accuracy : 57%
+Serial KNN Classifier duration: 0.015 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 15
+Concurrent Accuracy : 66%
+Concurrent KNN Classifier duration: 0.217 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 18
+Serial Accuracy : 66%
+Serial KNN Classifier duration: 0.007 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 18
+Concurrent Accuracy : 66%
+Concurrent KNN Classifier duration: 0.171 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 21
+Serial Accuracy : 66%
+Serial KNN Classifier duration: 0.008 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 21
+Concurrent Accuracy : 66%
+Concurrent KNN Classifier duration: 0.355 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 24
+Serial Accuracy : 66%
+Serial KNN Classifier duration: 0.006 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 24
+Concurrent Accuracy : 66%
+Concurrent KNN Classifier duration: 0.141 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 27
+Serial Accuracy : 66%
+Serial KNN Classifier duration: 0.008 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 27
+Concurrent Accuracy : 66%
+Concurrent KNN Classifier duration: 0.219 seconds
+*********************************
+
+Serial Knn Classifier - Iteration with k = 30
+Serial Accuracy : 66%
+Serial KNN Classifier duration: 0.006 seconds
+*********************************
+
+Concurrent Knn Classifier - Iteration with k = 30
+Concurrent Accuracy : 66%
+Concurrent KNN Classifier duration: 0.294 seconds
+*********************************
+
